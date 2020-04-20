@@ -93,19 +93,23 @@ Each unit in a building that is a condominium is defined by the Department of Fi
 - **Longform Name** : `Community District`
 - **DataType**: `Number`
 - **Expected/Allowed Values**: 
-    - 101-112: Manhattan Community Districts - 164: Central Park (JIA)
-    - 201-212: Bronx Community District - 226: Van Cortlandt Park (JIA)
-    - 227: Bronx Park (JIA)- 228: Pelham Bay Park (JIA)
-    - 301-318: Brooklyn Community Districts
-    - 355: Prospect Park (JIA)
-    - 356: Brooklyn Gateway National Recreation Area (JIA)
-    - 401-414: Queens Community Districts
-    - 480: LaGuardia Airport (JIA)
-    - 481: Flushing Meadow / Corona Park (JIA)
-    - 482: Forest Park (JIA) - 483: JFK International Airport (JIA)
-    - 484: Queens Gateway National Recreation Area (JIA)
-    - 501-503: Staten Island Community Districts
-    - 595: Staten Island Gateway National Recreation Area (JIA)
+    - `101-112`: Manhattan Community Districts 
+    - `164`: Central Park (JIA)
+    - `201-212`: Bronx Community District 
+    - `226`: Van Cortlandt Park (JIA)
+    - `227`: Bronx Park (JIA)
+    - `228`: Pelham Bay Park (JIA)
+    - `301-318`: Brooklyn Community Districts
+    - `355`: Prospect Park (JIA)
+    - `356`: Brooklyn Gateway National Recreation Area (JIA)
+    - `401-414`: Queens Community Districts
+    - `480`: LaGuardia Airport (JIA)
+    - `481`: Flushing Meadow / Corona Park (JIA)
+    - `482`: Forest Park (JIA) 
+    - `483`: JFK International Airport (JIA)
+    - `484`: Queens Gateway National Recreation Area (JIA)
+    - `501-503`: Staten Island Community Districts
+    - `595`: Staten Island Gateway National Recreation Area (JIA)
 - **Description**: The community district (CD) or joint interest area (JIA) the tax lot is located in, or partially located.
 
 The Department of City Planning - CD Layer for the DTM is used as the source when it identifies a community district for a tax lot. If a tax lot is split among more than one community district then PLUTO uses one of the community district numbers. If the Department of City Planning - CD Layer for the DTM does not identify a community district, the district is obtained from the Department of City Planning Geosupport System. If the community district is not available from the Geosupport System the DOF-RPAD Master file is used. If a tax lot is split by a community district boundary, only one community district is retained. Two portions of the city, Marble Hill and Rikers Island, are legally located in one borough and are each serviced by different boroughs. The COMMUNITY DISTRICT codes associated with these areas are the community districts they are serviced by. Specifically, Marble Hill is legally located in Manhattan but is serviced by the Bronx and has Bronx COMMUNITY DISTRICT codes of 207 or 208. Rikers Island has a Queens COMMUNITY DISTRICT code of 401 since it is serviced by Queens even though it is legally located in the Bronx.
@@ -170,25 +174,16 @@ The zip code is obtained from the Department of City Planning- Geosupport System
 - **Longform Name** : `Fire Company`
 - **DataType**: `Plain Text`
 - **Expected/Allowed Values**: 
-    - 001, 003-010, 014-016, 021-024, 026, 028, 033-035, 037, 039, 040, 044, 047,053-055, 058, 059, 065, 067, 069, 074, 076, 080, 084, 091, 093, 095: Manhattan Fire Company District 
-    - Engine 
-        - 001-016, 018, 020-026, 028, 030, 034-036, 040, 043, 045: Manhattan Fire Company Districts 
-    - Ladder 
-        - 038, 042, 043, 045, 046, 048, 050, 052, 060, 062-064, 066, 068, 070-073, 075, 079,081-083, 088, 089, 090, 092, 094, 096, 097: Bronx Fire Company Districts 
-    - Engine 
-        - 017, 019, 027, 029, 031-033, 037-039, 041, 042, 044, 046-056, 058, 059, 061: Bronx Fire Company Districts 
-    - Ladder 
-        - 201, 202, 205-207, 210, 211, 214, 216-222, 224-231, 233-243, 245-250, 253-255, 257, 271, 276, 277, 279-284, 290, 309, 310, 318, 321, 323, 330, 332: Brooklyn Fire Company Districts 
-    - Engine 
-        - 101-114, 118-120, 122-124, 131, 132, 146-149, 153, 156, 157, 159, 161, 166, 168-170, 172, 174-176: Brooklyn Fire Company District
-    - Ladder 
-        - 251, 258-260, 262-266, 268, 273-275, 285-287, 289, 291-295, 297-299, 301-308,311-317, 319, 320, 324-326, 328, 329, 331: Queens Fire Company Districts 
-    - Engine 
-        - 115-117, 121, 125-130, 133-138, 140, 142-144, 150-152, 154, 155, 158, 160, 162-165, 167, 173: Queens Fire Company Districts 
-    - Ladder 
-        - 151-168: Staten Island Fire Company Districts 
-    - Engine - 077-087: Staten Island Fire Company Districts 
-    - Ladder
+    - 001, 003-010, 014-016, 021-024, 026, 028, 033-035, 037, 039, 040, 044, 047,053-055, 058, 059, 065, 067, 069, 074, 076, 080, 084, 091, 093, 095: Manhattan Fire Company District - Engine 
+    - 001-016, 018, 020-026, 028, 030, 034-036, 040, 043, 045: Manhattan Fire Company Districts - Ladder 
+    - 038, 042, 043, 045, 046, 048, 050, 052, 060, 062-064, 066, 068, 070-073, 075, 079,081-083, 088, 089, 090, 092, 094, 096, 097: Bronx Fire Company Districts  - Engine 
+    - 017, 019, 027, 029, 031-033, 037-039, 041, 042, 044, 046-056, 058, 059, 061: Bronx Fire Company Districts - Ladder 
+    - 201, 202, 205-207, 210, 211, 214, 216-222, 224-231, 233-243, 245-250, 253-255, 257, 271, 276, 277, 279-284, 290, 309, 310, 318, 321, 323, 330, 332: Brooklyn Fire Company Districts - Engine 
+    - 101-114, 118-120, 122-124, 131, 132, 146-149, 153, 156, 157, 159, 161, 166, 168-170, 172, 174-176: Brooklyn Fire Company District - Ladder 
+    - 251, 258-260, 262-266, 268, 273-275, 285-287, 289, 291-295, 297-299, 301-308,311-317, 319, 320, 324-326, 328, 329, 331: Queens Fire Company Districts - Engine 
+    - 115-117, 121, 125-130, 133-138, 140, 142-144, 150-152, 154, 155, 158, 160, 162-165, 167, 173: Queens Fire Company Districts - Ladder 
+    - 151-168: Staten Island Fire Company Districts - Engine 
+    - 077-087: Staten Island Fire Company Districts - Ladder
 - **Description**: The fire company that services the tax lot. This field consists of four characters, the first of which is an alphabetic code identifying the type of Fire Company, where E stands for Engine and L stands for Ladder. The type code is followed by a one to three digit fire company number which is preceded with leading zeros if the company number is less than three digits.
 
 N\A
@@ -347,83 +342,78 @@ See split zone to determine if the tax lot is divided.
 - **Longform Name** : `Special District 1`
 - **DataType**: `Plain Text`
 - **Expected/Allowed Values**: 
-    - 125: 125th Street District 
-    - BPC: Battery Park City District 
-     
-     
-    - BR: Bay Ridge District  
-    - CD: City Island District  
-    - CI: Coney Island District 
-    
-     
-    - CL: Clinton District  
-    - CP: College Point  
-    - CR-1 Special Coastal Risk District 1 Broad Channel at Queens  
-    - CR-2: Special Coastal Risk District 2 Hamilton Beach at Queens  
-    - CR-3: Special Coastal Risk District 3 Buyout Areas at Staten Island  
-    - CO: Coney Island Mixed Use Disitrct  
-    - DB: Downtown Brooklyn District  
-    - DFR: Downtown Far Rockaway District  
-    - DJ: Downtown Jamaica 
-    - EC-1: Enhanced Commercial District 1 (Fourth Avenue, BK) 
-    - EC-2: Enhanced Commercial District 2 (Columbus and Amsterdam Avenue) 
-    - EC-3: Enhanced Commercial District 3 (Broadway, MN) 
-    - EC-4: Enhanced Commercial District 4 (Bedford Stuyvesant) 
-    - EC-5: Enhanced Commercial District 5 (BK) 
-    - EC-6: Enhanced Commercial District 6 (BK) 
-    - FH: Forest Hills District 
-    - GC: Garment Center District 
-    - C: Grand Concourse Preservation District 
-    - HS: Hillsides Preservation District 
-    - HSQ: Hudson Square District 
-    - HRP: Hudson River Park 
-    - HY: Hudson Yards District 
-    - HP: Hunts Point Special District 
-    - J: Jerome Corridor District 
-    - HRW: Harlem River Waterfront District 
-    - LC: Limited Commercial District 
-    - L: Lincoln Square District 
-    - LI: Little Italy District 
-    - LIC: Long Island City Mixed Use District 
-    - LM: Lower Manhattan District 
-    - MP: Madison Avenue Preservation District 
-    - MID: Midtown District 
-    - MMU: Manhattanville Mixed Use District 
-    - MX-1: Mixed Use District-1 Port Morris (BX) 
-    - MX-2: Mixed Use District-2 Dubmo (BK) 
-    - MX-4: Mixed Use District-4 Flushing/Bedford (BK) 
-    - MX-5: Mixed Use District-5 Red Hook (BK) 
-    - MX-6: Mixed Use District-6 Hudson Square (MN) 
-    - MX-7: Mixed Use District-7 Morrisania (BX) 
-    - MX-8: Mixed Use District-8 Greenpoint Williamsburg (BK) 
-    - MX-9: Mixed Use District-9 Northern Hunters Point Waterfront (BK) 
-    - MX-10: Mixed Use District-10 Atlantic and Howard Avenues (BK) 
-    - MX-11: Mixed Use District-11 Gowanus (BK) 
-    - MX-12: Mixed Use District-12 Borough Park (BK) 
-    - MX-13: Mixed Use District-13 Lower Concourse (BX) 
-    - MX-14: Mixed Use District-14 Third Avenue/Tremont Avenue (BX) 
-    - MX-15: Mixed Use District-15 West Harlem (MN) 
-    - MX-16: Mixed Use District-16 Ocean Hill/East New York (BK) 
-    - NA-1: Natural Area District-1 
-    - NA-2: Natural Area District-2 
-    - NA-3: Natural Area District-3 
-    - NA-4: Natural Area District-4 
-    - OP: Ocean Parkway District 
-    - PI: Park Improvement District 
-    - PC: Planned Community Preservation District 
-    - SV-1: Scenic View District 
-    - SB: Sheepshead Bay District 
-    - SHP: Southern Hunters Point District 
-    - SG: St. Geogrge District 
-    - SRD: South Richmond Development District 
-    - SRI: Southern Roosevelt Island District 
-    - TA: Transit Land Use District 
-    - TMU: Trobeca 
-    - Ise Dostroct 
-    - US: Union Square District 
-    - U: United Nations Development District 
-    - WCH: West CHelsea 
-    - WP: Willets Point District
+    - `125`: 125th Street District 
+    - `BPC`: Battery Park City District 
+    - `BR`: Bay Ridge District  
+    - `CD`: City Island District  
+    - `CI`: Coney Island District
+    - `CL`: Clinton District  
+    - `CP`: College Point  
+    - `CR-1`: Special Coastal Risk District 1 Broad Channel at Queens  
+    - `CR-2`: Special Coastal Risk District 2 Hamilton Beach at Queens  
+    - `CR-3`: Special Coastal Risk District 3 Buyout Areas at Staten Island  
+    - `CO`: Coney Island Mixed Use Disitrct  
+    - `DB`: Downtown Brooklyn District  
+    - `DFR`: Downtown Far Rockaway District  
+    - `DJ`: Downtown Jamaica 
+    - `EC-1`: Enhanced Commercial District 1 (Fourth Avenue, BK) 
+    - `EC-2`: Enhanced Commercial District 2 (Columbus and Amsterdam Avenue) 
+    - `EC-3`: Enhanced Commercial District 3 (Broadway, MN) 
+    - `EC-4`: Enhanced Commercial District 4 (Bedford Stuyvesant) 
+    - `EC-5`: Enhanced Commercial District 5 (BK) 
+    - `EC-6`: Enhanced Commercial District 6 (BK) 
+    - `FH`: Forest Hills District 
+    - `GC`: Garment Center District 
+    - `C`: Grand Concourse Preservation District 
+    - `HS`: Hillsides Preservation District 
+    - `HSQ`: Hudson Square District 
+    - `HRP`: Hudson River Park 
+    - `HY`: Hudson Yards District 
+    - `HP`: Hunts Point Special District 
+    - `J`: Jerome Corridor District 
+    - `HRW`: Harlem River Waterfront District 
+    - `LC`: Limited Commercial District 
+    - `L`: Lincoln Square District 
+    - `LI`: Little Italy District 
+    - `LIC`: Long Island City Mixed Use District 
+    - `LM`: Lower Manhattan District 
+    - `MP`: Madison Avenue Preservation District 
+    - `MID`: Midtown District 
+    - `MMU`: Manhattanville Mixed Use District 
+    - `MX-1`: Mixed Use District-1 Port Morris (BX) 
+    - `MX-2`: Mixed Use District-2 Dubmo (BK) 
+    - `MX-4`: Mixed Use District-4 Flushing/Bedford (BK) 
+    - `MX-5`: Mixed Use District-5 Red Hook (BK) 
+    - `MX-6`: Mixed Use District-6 Hudson Square (MN) 
+    - `MX-7`: Mixed Use District-7 Morrisania (BX) 
+    - `MX-8`: Mixed Use District-8 Greenpoint Williamsburg (BK) 
+    - `MX-9`: Mixed Use District-9 Northern Hunters Point Waterfront (BK) 
+    - `MX-10`: Mixed Use District-10 Atlantic and Howard Avenues (BK) 
+    - `MX-11`: Mixed Use District-11 Gowanus (BK) 
+    - `MX-12`: Mixed Use District-12 Borough Park (BK) 
+    - `MX-13`: Mixed Use District-13 Lower Concourse (BX) 
+    - `MX-14`: Mixed Use District-14 Third Avenue/Tremont Avenue (BX) 
+    - `MX-15`: Mixed Use District-15 West Harlem (MN) 
+    - `MX-16`: Mixed Use District-16 Ocean Hill/East New York (BK) 
+    - `NA-1`: Natural Area District-1 
+    - `NA-2`: Natural Area District-2 
+    - `NA-3`: Natural Area District-3 
+    - `NA-4`: Natural Area District-4 
+    - `OP`: Ocean Parkway District 
+    - `PI`: Park Improvement District 
+    - `PC`: Planned Community Preservation District 
+    - `SV-1`: Scenic View District 
+    - `SB`: Sheepshead Bay District 
+    - `SHP`: Southern Hunters Point District 
+    - `SG`: St. Geogrge District 
+    - `SRD`: South Richmond Development District 
+    - `SRI`: Southern Roosevelt Island District 
+    - `TA`: Transit Land Use District 
+    - `TMU`: Tribeca Mixed Use District
+    - `US`: Union Square District 
+    - `U`: United Nations Development District 
+    - `WCH`: West CHelsea 
+    - `WP`: Willets Point District
 - **Description**: The special purpose district assigned to the tax lot.
 
 See SplitZone to determine if the tax lot is divided.
