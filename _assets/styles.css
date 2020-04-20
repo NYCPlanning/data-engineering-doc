@@ -1,0 +1,13 @@
+:root {
+    --theme-color: #d96b27;
+    --theme-color-dark: #ae561f;
+  
+    --text-color-base: #212326;
+    --text-color-secondary: #5d626a;
+    --text-color-tertiary: #aaafb5;
+  }
+
+.sidebar .app-name-link img {
+    height: 50px;
+  }
+
