@@ -1,11 +1,10 @@
 <!-- ./_sidebar.md -->
 - [Home](/)
 
-- [About](about.md)
-
 - Products
-    - [PLUTO](_content/pluto.md)
-    - [Facilities](_content/facilities.md)
-    - [COLP](_content/colp.md)
-    
+    - [🪐 PLUTO](_content/pluto.md)
+    - [🏢 COLP](_content/colp.md)
+    - [🏭 Facilities DB](_content/facilities.md)
+    - [🏗️ Developments DB](_content/developments.md)
+
 - [Contacts](contacts.md)
