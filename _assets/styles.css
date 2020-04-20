@@ -11,3 +11,6 @@
     height: 50px;
   }
 
+.markdown-section iframe {
+  border:0px
+}

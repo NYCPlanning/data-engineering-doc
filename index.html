@@ -24,17 +24,15 @@
       subMaxLevel: 3,
       auto2top: true,
       autoHeader: true,
+      executeScript: true,
+      noCompileLinks: ['/blogs'],
       search: {
-        maxAge: 86400000, // Expiration time, the default one day
+        maxAge: 86400000,
         paths: 'auto',
         placeholder: 'Type to search',
-
         noData: 'No Results!',
-
-        // Headline depth, 1 - 6
         depth: 4,
-
-        hideOtherSidebarContent: true, // whether or not to hide other sidebar content
+        hideOtherSidebarContent: true,
       },
       markdown: {
         renderer: {
@@ -59,6 +57,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script>
