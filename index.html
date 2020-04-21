@@ -38,7 +38,11 @@
             }
             var editHtml = '[:memo: Edit Document](' + url + ')\n'
 
-            return editHtml+html
+            if (vm.route.path === '/') {
+              return html
+            } else {
+              return editHtml + html
+            }
           })
         },
       ],
