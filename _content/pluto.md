@@ -1,4 +1,5 @@
 # PLUTO and MapPLUTO
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/NYCPlanning/db-pluto?label=version) ![CI](https://github.com/NYCPlanning/db-pluto/workflows/CI/badge.svg)
 
 ## About
 
