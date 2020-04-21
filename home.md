@@ -1,4 +1,6 @@
-# 📊 Data Engineering
+<span style="font-size:3rem; margin-top:0; font-weight:900; color:#212326;">
+📊 Data Engineering
+</span>
 
 ## About us {docsify-ignore}
 

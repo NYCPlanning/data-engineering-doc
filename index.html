@@ -36,7 +36,7 @@
             } else {
               url = 'https://github.com/NYCPlanning/data-engineering-doc/blob/master/' + vm.route.file
             }
-            var editHtml = '[:memo: Edit Document](' + url + ')\n'
+            var editHtml = '[📝 Edit Document](' + url + ')\n'
 
             if (vm.route.path === '/') {
               return html
@@ -79,6 +79,9 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'NYCPlanning/community',
