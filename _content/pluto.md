@@ -1265,4 +1265,3 @@ The tax lot will not appear in the MapPLUTO geodatabase if the lot is found only
 - **DataType**: `Plain Text`
 - **Expected/Allowed Values**: 
 - **Description**: The Version Number related to the release of PLUTO.
-
