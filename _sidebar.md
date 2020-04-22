@@ -1,7 +1,7 @@
 <!-- ./_sidebar.md -->
 - [Home](/)
 
-- Products
+- [Products](products.md)
 
     - [🪐 PLUTO](_content/pluto.md)
     - [🏢 COLP](_content/colp.md)
