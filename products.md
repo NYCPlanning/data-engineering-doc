@@ -8,7 +8,7 @@ Data Engineering builds and maintains a variety of data products. Many of these 
 
 ---
 
-### [PLUTO: Primary Land Use Tax Lot Output](/_content/pluto)
+### [PLUTO: Primary Land Use Tax Lot Output](/_content/pluto) {docsify-ignore}
 **Stability:** <span class="label stable">stable</span> 
 
 **Business-owners:** <span class="label dcp-edm">DCP EDM</span>
@@ -21,7 +21,7 @@ Contains over seventy tax lot, building, and geographic/political/administrative
 
 ---
 
-### [COLP: City Owned and Leased Properties](/_content/colp) 
+### [COLP: City Owned and Leased Properties](/_content/colp) {docsify-ignore}
 **Stability:** <span class="label in-development">in development</span>
 
 **Business-owners:** <span class="label dcp-edm">DCP EDM</span> <span class="label dcas">DCAS</span>
@@ -34,7 +34,7 @@ Contains property-level information about use, owning/leasing agency, location, 
 
 ---
 
-### [Facilities](/_content/facilities) 
+### [Facilities](/_content/facilities) {docsify-ignore}
 **Stability:** <span class="label enhancing">frequent enhancement</span>
 
 **Business-owners:** <span class="label dcp-edm">DCP EDM</span>
@@ -47,7 +47,7 @@ Location and characteristics and categorization of more than 35,000 public facil
 
 ---
 
-### [Developments](/_content/developments) 
+### [Developments](/_content/developments) {docsify-ignore}
 **Stability:** <span class="label enhancing">frequent enhancement</span>
 
 **Business-owners:** <span class="label dcp-hed">DCP HED</span>
