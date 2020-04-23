@@ -1,41 +1,49 @@
-<h1 style="font-size:2rem">Products Overview</h1>
+<h1 style="font-size:2rem" class="text-dark">Products Overview</h1>
 
-<div id="data-products">
-    <div v-for="product in products" :key="product.name" class="product-card">
-        <a :href="product.link" class="name">
-            <span class="product-name">{{ product.name }}</span>
-        </a>
-        <a :href="product.repo">
-             <i class="fab fa-github fa-lg" style="color:#212326; margin: 0 0 2px 0;"></i>
-        </a>
-        <div>
-            <div>
-                <p class='product-labelname'>Status:</p>
-                <span 
-                    v-bind:style="{background: product.stability.color}" class="label"
-                >
-                    {{ product.stability.name }}
-                </span>
-            </div>
-            <div>
-                <p class="product-labelname">Business owners:</p>
-                <span
-                    v-for="owner in product.businessowner"
-                    :key="product.businessowner"
-                    v-bind:style="{background: owner.color}"
-                    class="label"
-                >
-                    {{ owner.name }}
-                </span>
-            </div>
-            <div>
-                <p class="product-labelname">update cycle:</p>
-                <span class="label">{{  product.productcycle }}</span>
-            </div>
+<div id="data-products" class="card-deck">
+    <div v-for="product in products" 
+        :key="product.name"
+        class="card mb-3" style="min-width: 25rem;">
+        <div class="card-header">
+            <a :href="product.link">
+                    <span class="product-name">
+                        {{ product.name }}
+                    </span>
+                </a>
+            <a :href="product.repo">
+                <i class="fab fa-github fa-lg" style="color:#212326; margin: 0 0 2px 0;"></i>
+            </a>
         </div>
-        <p class="description">
-            {{ product.description }}
-        </p>
+        <div class="card-body">
+            <div>
+                <div>
+                    <p class='product-labelname'>Status:</p>
+                    <span 
+                        v-bind:style="{background: product.stability.color}" 
+                        class="label"
+                    >
+                        {{ product.stability.name }}
+                    </span>
+                </div>
+                <div>
+                    <p class="product-labelname">Business owners:</p>
+                    <span
+                        v-for="owner in product.businessowner"
+                        v-bind:style="{background: owner.color}"
+                        class="label"
+                    >
+                        {{ owner.name }}
+                    </span>
+                </div>
+                <div>
+                    <p class="product-labelname">update cycle:</p>
+                    <span class="label">{{  product.productcycle }}</span>
+                </div>
+            </div>
+            <p class="description">
+                {{ product.description }}
+            </p>
+        </div>
     </div>
 </div>
 
