@@ -1,18 +1,12 @@
 # Developements Database
 
+The goal of the developments database is to provide a detailed view of both residential and non-residential development that has occured since the 2010 census. The core of the developments data base is a compilation of NYC DOB job and permit information. This data captures changes in units resulting from new buildings, major alterations, and demolitions. Rough timelines of development are captured in the [DOB job status dates](https://www1.nyc.gov/assets/buildings/pdf/bisjobstatus.pdf). To more reliably capture development completion, the database also includes dates associated with certificates of occupancy. Where possible, the database also tracks Housing New York affordable units created as part of each development. 
+
+We provide context for each development record by geocoding, then merging the data with various political, geographic, and administrative boundaries. Lot-level zoning and land-use information comes from [PLUTO](/_content/pluto).
 
 ## Source data
 
-### DOB Jobs Data - Permit Applications
-
-These data are pulled from NYC Open Data. The jobs data provides a comprehensive list of development projects, including projects where an application has been filed, but no permit has yet been issued, or a permit has been issued but construction has not yet been completed. For more information on DOB job milestones and status labels see https://www1.nyc.gov/assets/buildings/pdf/bisjobstatus.pdf.
-
-For each project, the jobs data captures the type of development, the initial number of existing units (relevant for alterations and demolitions) and the number of proposed units (relevant for alterations and new buildings). Some records, especially alterations, have missing values.
-
-### DOB Certificates of Occupancy (COs) Data – Completions
-
-These data are requested from DOB. The public version is missing the number of dwelling units that each CO certifies. The CO data captures the legal number of existing units at a given point in time. Since a job may have multiple temporary COs before the final CO is given, there may be multiple rows per job ID.
-Information on the COs enables the calculation of the incremental change in housing units per year. Buildings, particularly large ones, may have construction periods spanning several years.
+The majority of the data contained in the developments database comes from NYC DOB. These include permit issuance data, job application records, and new certificates of occupancy. Housing New York affordable housing unit information comes from HPD. Administrative and geographic boundary information primarily comes from DCP. Other contextual data comes from [PLUTO](/_content/pluto).
 
 
 ## Data dictionary -- DOB and Housing New York fields
