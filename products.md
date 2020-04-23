@@ -3,7 +3,7 @@
 <div id="data-products" class="card-deck">
     <div v-for="product in products" 
         :key="product.name"
-        class="card mb-3" style="min-width: 25rem;">
+        class="card mb-3" style="min-width: 16rem;">
         <div class="card-header">
             <a :href="product.link">
                     <span class="product-name">
