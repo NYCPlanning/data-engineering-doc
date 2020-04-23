@@ -1,4 +1,4 @@
-# Facilities database
+# Facilities database ![CI](https://github.com/NYCPlanning/db-facilities-tmp/workflows/CI/badge.svg)
 
 ## About
 
