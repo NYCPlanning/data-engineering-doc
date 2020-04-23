@@ -1,4 +1,4 @@
-# City Owned and Leased Properties Database (COLP)
+# City Owned and Leased Properties Database (COLP) ![CI](https://github.com/NYCPlanning/db-colp/workflows/CI/badge.svg)
 
 ## About 
 Various city authorities own or lease a large inventory of properties. This repo contains code to create a database of all city owned and leased properties, as required under Section 204 of the City Charter. The database contains information about each property's use, owning/leasing agency, location, and tenent agreements. This repo is a refactoring of the dataset found on Bytes of the Big Apple, and is currently in development.
