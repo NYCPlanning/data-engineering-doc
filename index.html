@@ -9,6 +9,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="NYC Planning Data Engineering Home">
   <link rel="icon" href="_assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="_assets/styles.css" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
@@ -39,6 +40,8 @@
             var editHtml = '[📝 Edit Document](' + url + ')\n'
 
             if (vm.route.path === '/') {
+              return html
+            } else if (vm.route.path === '/products') {
               return html
             } else {
               return editHtml + html
@@ -86,6 +89,8 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
   <script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'NYCPlanning/community',
