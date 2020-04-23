@@ -29,6 +29,10 @@
     </div>
 </div>
 
+> <span class="label" style="background:#00ae00">stable</span>: These products are routinely updated. Code changes and enhancements do not happen with every release, and instead occur in scheduled sprints. Users can expect version-to-version schemas to remain consistent. Updates of these data products are largely automated and transfered to the business owner.  
+<span class="label" style="background:#443aff">in development</span>: These datasets are currently being developed. They have not settled into a routine production schedule yet, and may experience major overhauls between versions.  
+<span class="label" style="background:#ed1294">frequent enhancement</span>: While these products get produced regularly, few updates occur without hands-on tweaking of the code. The production of these datasets are still closely controlled by data engineering.  
+
 <script>
     var edm = {name:'DCP EDM', color:'#e17e22'}
     var hed = {name:'DCP HED', color:'#3870ff'}
