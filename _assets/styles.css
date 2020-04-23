@@ -33,10 +33,10 @@ body {
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: inherit !important;
   color: inherit !important;
-  text-shadow: 0;
-  opacity: 1;
+  text-shadow: 0 0px 0 #212326;
+  opacity: 1 !important;
 }
 
 .label {    
