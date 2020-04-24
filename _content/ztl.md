@@ -181,3 +181,128 @@ Database as furnished on the website.
 DCP and the City are not liable for any deficiencies in the completeness, accuracy, content, or
 fitness for any particular purpose or use of the Zoning Tax Lot Database or applications utilizing
 the Zoning Tax Lot Database, provided by any third party.
+
+***
+## APPENDIX A: SPECIAL PURPOSE DISTRICTS
+
+|**Abbreviation**|**Description**|
+|---|---|
+|125th|Special 125th Street District|
+|125th/TA|Special 125th Street Dist/Transit Land use Dist|
+|BPC|Special Battery Park City District|
+|BR|Special Bay Ridge District|
+|C|Special Grand Councourse Preservation District|
+|CD|Special City Island District|
+|CI|Special Coney Island District|
+|CL|Special Clinton District|
+|CO|Special Coney Island Mixed Use District|
+|CP|Special College Point District|
+|CR|Special Coastal Risk District|
+|DB|Special Downtown Brooklyn District|
+|DFR|Special Downtown Far Rockaway District|
+|DJ|Special Downtown Jamaica District|
+|EC-1|Special Enhanced Commercial District 1|
+|EC-2|Special Enhanced Commercial District 2|
+|EC-3|Special Enhanced Commercial District 3|
+|EC-4|Special Enhanced Commercial District 4|
+|EC-5|Special Enhanced Commercial District 5|
+|EC-6|Special Enhanced Commercial District 6|
+|EHC|East Harlem Corridors|
+|EHC/TA|East Harlem Corridors/Transit Land Use District|
+|FH|Special Forest Hills District|
+|GC|Special Garment Center District|
+|GI|Special Governance Island District|
+|HP|Special Hunts Point District|
+|HRP|Special Hudson River Park District|
+|HRW|Special Harlem River Waterfront District|
+|HS|Special Hillsides Preservation District|
+|HSQ|Special Hudson Square District|
+|HY|Special Hudson Yards District|
+|IN|Special Inwood District|
+|J|Jerome Avenue District|
+|L|Special Lincoln Square District|
+|LC|Special Limited Commercial District|
+|LI|Special Little Italy District|
+|LIC|Special Long Island City Mixed Use District|
+|LM|Special Lower Manhattan District|
+|MiD|Special Midtown District|
+|MMU|Special Manhattanville Mixed Use District|
+|MP|Special Madison Avenue Preservation District|
+|MX-1|Special Mixed Use District (MX-1)|
+|MX-2|Special Mixed Use District (MX-2)|
+|MX-3|Special Mixed Use District (MX-3)|
+|MX-4|Special Mixed Use District (MX-4)|
+|MX-5|Special Mixed Use District (MX-5)|
+|MX-6|Special Mixed Use District (MX-6)|
+|MX-7|Special Mixed Use District (MX-7)|
+|MX-8|Special Mixed Use District (MX-8)|
+|MX-9|Special Mixed Use District (MX-9)|
+|MX-10|Special Mixed Use District (MX-10)|
+|MX-11|Special Mixed Use District (MX-11)|
+|MX-12|Special Mixed Use District (MX-12)|
+|MX-13|Special Mixed Use District (MX-13)|
+|MX-14|Special Mixed Use District (MX-14)|
+|MX-15|Special Mixed Use District (MX-15)|
+|MX-16|Special Mixed Use District (MX-16)|
+|MX-17|Special Mixed Use District (MX-17)|
+|NA-1|Special Natural Area District|
+|NA-2|Special Natural Area District|
+|NA-3|Special Natural Area District|
+|NA-4|Special Natural Area District|
+|OP|Special Ocean Parkway District|
+|PC|Special Planned Community Preservation District|
+|PI|Special Park Improvement District|
+|SB|Special Sheepshead Bay District|
+|SG|Special St. George District|
+|SHP|Special Southern Hunters Point District|
+|SRD|Special South Richmond Development District|
+|SRI|Special Southern Rooseevelt Island District|
+|SV-1|Special Scenic View District|
+|SW|Special Stapleton Waterfront District|
+|TA|Special Transit Land Use District|
+|TMU|Special Tribeca Mixed Use District|
+|U|Special United Nations Development District|
+|US|Special Union Square District|
+|WCh|Special West Chelsea District|
+|WP|Special Willets Point District|
+
+***
+
+## APPENDIX B: ZONING DISTRICTS
+
+|**Abbreviation**|**Description**|
+|---|---|
+|R1-1 - R10H|Residential Districts|
+|C1-6 - C8-4|Commercial Districts|
+|M1-1 - M3-2|Manufacturing Districts|
+|M1-1/R5 - M1-6/R10|Mixed Manufacturing & Residential Districts|
+|BPC|Battery Park City|
+|PARK|Areas designated as PARK, BALL FIELD, PLAYGROUND, and PUBLIC SPACES in NYC GIS Zoning Features.|
+
+***
+
+## APPENDIX C: COMMERCIAL OVERLAYS
+
+Valid Commercial Overlay values: C1-1, C1-2, C1-3, C1-4, C1-5, C2-1, C2-2, C2-3, C2-4, C2-5
+
+## APPENDIX D: OVERLAPPING SPECIAL PURPOSE DISTRICTS
+
+In the area of Manhattan covered by both the Special Midtown District and the Special
+Clinton District, **Special District 1** is CL and **Special District 2** is MiD.
+* In the area of Manhattan covered by both the Special Midtown District and the Special
+Transit District, **Special District 1** is MiD and **Special District 2** is TA.
+* In the area of Manhattan covered by both the Special 125th Street District and the
+Special Transit District, **Special District 1** is 125th and **Special District 2** is TA.
+* In the area of Brooklyn covered by both the Special Enhanced Commercial District 5 or 6
+and Mixed Use District MX-16 (Ocean Hill/East New York), **Special District 1** is EC-5 or
+EC-6 and **Special District 2** is MX-16.
+
+## APPENDIX E: LIMITED HEIGHT DISTRICTS
+
+|**Abbreviation**|**Description**|
+|---|---|
+|LH-1|Limited Height District No. 1|
+|LH-1A|Limited Height District No. 1A (Upper East Side)|
+|LH-2|Limited Height District No. 2*|
+|LH-3|Limited Height District No. 3*|
+*There are currently no districts with these designations
