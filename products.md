@@ -56,6 +56,8 @@ Products Overview
     var edm = {name:'DCP EDM', color:'#0366d6'}
     var hed = {name:'DCP HED', color:'#ff006a'}
     var dcas = {name:'DCAS', color:'#c300ff'}
+    var pop = {name:'DCP Population', color:'#4a8207'}
+    var plancoord = {name:'DCP Planning Coordination', color:'#ed6802'}
     var stable = {name:'stable', color:'#00ae00'}
     var developing = {name:'in development', color:'#d73a49'}
     var enhancing = {name:'frequent enhancement', color:'#edb700'}
@@ -113,6 +115,38 @@ Products Overview
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-zoningtaxlots',
                 link: '#/_content/facilities'
+            },
+            {
+                name: 'Community Board Budget Requests',
+                description: 'It is based on requests for future capital or expense projects submitted by each of NYC\'s 59 Community Boards. We \
+                adds value to the submitted budget requests by creating geometries where possible for requested projects, \
+                in the effort to map as many budget requests as possible.',
+                businessowner: [edm, plancoord],
+                productcycle: 'Bianually',
+                stability: stable,
+                geometry: 'point',
+                repo: 'https://github.com/NYCPlanning/db-cbbt',
+                link: '#/_content/cbbr'
+            },
+            {
+                name: 'Population Fact Finder',
+                description: 'Population FactFinder allows you to easily define study areas within New York City and examine detailed population profiles showing critical demographic, social, economic, and housing statistics, and how these statistics have changed over time.',
+                businessowner: [edm, pop],
+                productcycle: 'Yearly',
+                stability: stable,
+                geometry: 'point',
+                repo: 'https://github.com/NYCPlanning/db-acs',
+                link: '#/_content/acs'
+            },
+            {
+                name: 'Geographic Research Quality Checks',
+                description: 'This is a test suite we developed using Geosupport to help the Geographic research team to conduct data QAQC',
+                businessowner: [edm],
+                productcycle: 'Quaterly',
+                stability: developing,
+                geometry: 'point',
+                repo: 'https://github.com/NYCPlanning/db-gru-qaqc',
+                link: '#/_content/gru-qaqc'
             }
         ]}
     })
