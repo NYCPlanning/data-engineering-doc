@@ -48,6 +48,20 @@
             }
           })
         },
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span style="padding:5px;"><a href="https://twitter.com/NYCPlanning"><i class="fab fa-twitter-square fa-lg"></i></a></span>',
+            '<span style="padding:5px;"><a href="https://github.com/nycplanning"><i class="fab fa-github-square fa-lg"></i></a></span>',
+            '<span style="padding:5px;"><a href="https://medium.com/nyc-planning-digital"><i class="fab fa-medium fa-lg"></i></a></span>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
       ],
       search: {
         maxAge: 86400000,
@@ -84,7 +98,6 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
