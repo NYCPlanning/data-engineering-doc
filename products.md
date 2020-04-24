@@ -1,5 +1,6 @@
-<h1 style="font-size:2rem" class="text-dark">Products Overview</h1>
-
+<h1 style="font-size:3rem; margin:0 0 2rem 0; font-weight:900; color:#212326;">
+Products Overview
+</h1>
 <div id="data-products" class="card-deck">
     <div v-for="product in products" 
         :key="product.name"
