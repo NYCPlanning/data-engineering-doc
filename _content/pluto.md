@@ -6,61 +6,40 @@
 The Primary Land Use Tax Lot Output (PLUTO™) data file contains extensive land use and
 geographic data at the tax lot level in a comma-delimited file.
 The PLUTO tax lot data files contain over seventy data fields derived from data files maintained
-by the Department of City Planning (DCP), Department of Fice (DOF), Department of
+by the Department of City Planning (DCP), Department of Finance (DOF), Department of
 Citywide Administrative Services (DCAS), and Landmarks Preservation Commission (LPC).
 DCP has created additional fields based on data obtained from one or more of the major data
 sources. PLUTO data files contain three basic types of data:
+
 * Tax Lot Characteristics;
 * Building Characteristics; and
 * Geographic/Political/Administrative Districts.
 
-There are two idiosyncrasies regarding the tax lot data. The PLUTO data contain one record
-per tax lot except for condominiums. PLUTO data contain one record per condominium
-complex instead of records for each condominium unit tax lot. A tax lot is usually a parcel of
-real property. The parcel can be under water, vacant, or contain one or more buildings or
-structures. The Department of Fice assigns a tax lot number to each condominium unit and
-a billing tax lot number to the Condominium Complex. A Condominium Complex is defined as
-one or more structures or properties under the auspices of the same condominium association.
-DCP summarizes DOF's condominium unit tax lot data so that each Condominium Complex
-within a tax block is represented by only one record. The Condominium Complex record is
-assigned the billing tax lot number when one exists. When the billing tax lot number has not
-yet been assigned by DOF, the lowest tax lot number within the tax block of the Condominium
-Complex is assigned.
-The second idiosyncrasy is related to borough and community district geography. Two portions
-of the City, Marble Hill and Rikers Island, are legally located in one borough but are serviced by
-another borough. Specifically, Marble Hill is legally located in Manhattan but is serviced by The
-Bronx, while Rikers Island is legally part of The Bronx but is serviced by Queens. Therefore,
-Marble Hill tax lots are located in the Manhattan borough file and Rikers Island tax lots are in
-The Bronx borough file.
+#### There are two idiosyncrasies regarding the tax lot data.
+
+1. The PLUTO data contain **one record per tax lot except for condominiums**. PLUTO data contain **one record per condominium complex** instead of records for each condominium unit tax lot. A tax lot is usually a parcel of real property. The parcel can be under water, vacant, or contain one or more buildings or structures. 
+
+!> The Department of Finance (DOF) assigns a tax lot number to each condominium unit and a billing tax lot number to the Condominium Complex (a Condo BBL). A Condominium Complex is defined as one or more structures or properties under the auspices of the same condominium association. </br> DCP summarizes DOF's condominium unit tax lot data so that each Condominium Complex within a tax block is represented by only one record. The Condominium Complex record is assigned the billing tax lot number when one exists. When the billing tax lot number has not yet been assigned by DOF, the lowest tax lot number within the tax block of the Condominium Complex is assigned. 
+
+
+2. The second idiosyncrasy is related to borough and community district geography. Two portions of the City, Marble Hill and Rikers Island, are legally located in one borough but are serviced by another borough. Specifically, **Marble Hill is legally located in Manhattan but is serviced by The Bronx**, while **Rikers Island is legally part of The Bronx but is serviced by Queens**. Therefore, Marble Hill tax lots are located in the Manhattan borough file and Rikers Island tax lots are in The Bronx borough file.
 
 ## Sources
+Department of City Planning – E-Designations: `03/31/20`  
+Department of City Planning – Georeferenced NYC Zoning Maps: `08/30/19`  
+Department of City Planning – NYC City Owned and Leased Properties: `08/27/19`  
+Department of City Planning – NYC GIS Zoning Features: `03/26/20`  
+Department of City Planning – Political and Administrative Districts: `20a`  
+Department of City Planning – Geosupport version: `20a`  
+Department of Finance – Digital Tax Map (DTM): `03/31/20`  
+Department of Finance – Mass Appraisal System (CAMA): `04/06/20`  
+Department of Finance – Property Tax System (PTS): `04/06/20`  
+Landmarks Preservation Commission – Historic Districts: `08/27/19`  
+Landmarks Preservation Commission – Individual Landmarks: `08/27/19`  
 
-|**SOURCE**|**DATE OF DATA**|
-|---|---|
-|Department of City Planning - Political and Administrative Districts|January 15, 2018|
-|Department of Fice - Digital Tax Map|April 5, 2018|
-|Department of City Planning - NYC GIS Zoning Features|Oct 26, 2018|
-|Department of City Planning - E Designations|May 15, 2018|
-|Department of Citywide Administrative Services - City Ownership Code|April 20, 2018|
-|Department of Fice - RAPD Master File|May 18, 2018|
-|Department of Fice - Mass Appraisal System|May 4, 2018|
-|Landmarks Preservation Commission - Historic Districts|April 12, 2018|
-|Landmarks Preservation Commission - Landmarks|April 12, 2018|
-
-City Planning also merges the PLUTO data with the DCP modified version of the DOF’s Digital
+!> City Planning also merges the PLUTO data with the DCP modified version of the DOF’s Digital
 tax map to create MapPLUTO for use with various geographic information systems. For more
 information on MapPLUTO see the DCP web site www.nyc.gov/planning.
-
-**PLUTO is being provided by the Department of City Planning (DCP) on DCP’s website for
-informational purposes only. DCP does not warranty the completeness, accuracy,
-content, or fitness for any particular purpose or use of PLUTO, nor are any such
-warranties to be implied or inferred with respect to PLUTO as furnished on the website.
-DCP and the City are not liable for any deficiencies in the completeness, accuracy,
-content, or fitness for any particular purpose or use of PLUTO, or applications utilizing
-PLUTO, provided by any third party.**
-
-If you have any questions concerning the data, please click on http://www.nyc.gov/open-data-feedback
-to submit your questions.
 
 ## Data Dictionary
 ### Borough
@@ -87,7 +66,19 @@ Two portions of the city, Marble Hill and Rikers Island, are each legally locate
 - **Expected/Allowed Values**: 
 - **Description**: The number of the tax lot. Each tax lot is unique within a tax block (see BLOCK).
 
-Each unit in a building that is a condominium is defined by the Department of Fice as a separate tax lot. To make condominium information more compatible with parcel information, the Department of City Planning aggregated condominium unit tax lot information so that each condominium complex within a tax block is represented by only one tax lot record. A condominium complex is defined as one or more structures or properties under the auspicies of the same condominium association. The Department of City Planning then assigned the condominium billing tax lot number to the condominium complex tax lot record. If the Department of Fice has not yet assigned a billing tax lot number to the condominium complex then the lowest tax lot number within the condominium complex was used. The Department of Fice DTM uses the formerly known as (FKA) Tax Lot number for Condominiums. The Department of City Planning has modified the Tax Lot number of DOF DTM by replacing the FKA with the condominiums billing tax lot number. Often the tax lot number can tell you the type of tax lot. Of course there are exceptions to each convention. Usually tax lot number '1-999' correspond with traditional tax lots; '1001-6999' correspond with condominium unit lots; '7501-7599' correspond with condominium billing lots; '8000-8899' correspond with subterranean tax lots; '8900-8999' correspond with DTM dummy tax lots; '9000-9899' correspond with air right tax lots. The Air Rights Tax Lot goes with the base Tax Lot or Donating Tax Lot. For example: If Tax Lot 32 has Air Rights, those Air Rights would be identified as 9032. When the structure is built the Air Rights Tax Lot is retired. Property owners do not have to create an Air Rights Tax Lot to transfer development rights.
+Each unit in a building that is a condominium is defined by the Department of Finance as a separate tax lot. To make condominium information more compatible with parcel information, the Department of City Planning **aggregated condominium unit tax lot information** so that each condominium complex within a tax block is represented by only one tax lot record. 
+
+**A condominium complex** is defined as one or more structures or properties under the auspicies of the same condominium association. The Department of City Planning then assigned the condominium billing tax lot number to the condominium complex tax lot record. If the Department of Finance has not yet assigned a billing tax lot number to the condominium complex then the lowest tax lot number within the condominium complex was used. The Department of Finance DTM uses the formerly known as (FKA) Tax Lot number for Condominiums. The Department of City Planning has modified the Tax Lot number of DOF DTM by replacing the FKA with the condominiums billing tax lot number. Often the tax lot number can tell you the type of tax lot. 
+
+Of course there are exceptions to each convention. Usually tax lot number 
++ `1-999` correspond with traditional tax lots; 
++ `1001-6999` correspond with condominium unit lots; 
++ `7501-7599` correspond with condominium billing lots; 
++ `8000-8899` correspond with subterranean tax lots; 
++ `8900-8999` correspond with DTM dummy tax lots; 
++ `9000-9899` correspond with air right tax lots. The Air Rights Tax Lot goes with the base Tax Lot or Donating Tax Lot. 
+
+?> **Example**: If Tax Lot 32 has Air Rights, those Air Rights would be identified as 9032. When the structure is built the Air Rights Tax Lot is retired. Property owners do not have to create an Air Rights Tax Lot to transfer development rights.
     
 
 ### CD
@@ -113,7 +104,11 @@ Each unit in a building that is a condominium is defined by the Department of Fi
     - `595`: Staten Island Gateway National Recreation Area (JIA)
 - **Description**: The community district (CD) or joint interest area (JIA) the tax lot is located in, or partially located.
 
-The Department of City Planning - CD Layer for the DTM is used as the source when it identifies a community district for a tax lot. If a tax lot is split among more than one community district then PLUTO uses one of the community district numbers. If the Department of City Planning - CD Layer for the DTM does not identify a community district, the district is obtained from the Department of City Planning Geosupport System. If the community district is not available from the Geosupport System the DOF-RPAD Master file is used. If a tax lot is split by a community district boundary, only one community district is retained. Two portions of the city, Marble Hill and Rikers Island, are legally located in one borough and are each serviced by different boroughs. The COMMUNITY DISTRICT codes associated with these areas are the community districts they are serviced by. Specifically, Marble Hill is legally located in Manhattan but is serviced by the Bronx and has Bronx COMMUNITY DISTRICT codes of 207 or 208. Rikers Island has a Queens COMMUNITY DISTRICT code of 401 since it is serviced by Queens even though it is legally located in the Bronx.
++ The Department of City Planning - CD Layer for the DTM is used as the source when it identifies a community district for a tax lot. 
++ If **a tax lot is split among more than one community district** then PLUTO uses one of the community district numbers. 
++ If the Department of City Planning - CD Layer for the DTM **does not identify** a community district, the district is obtained from the Department of **City Planning Geosupport System**. 
++ If the community district is **not available** from the Geosupport System the DOF-RPAD Master file is used. If a tax lot is split by a community district boundary, only one community district is retained. 
++ Two portions of the city, Marble Hill and Rikers Island, are legally located in one borough and are each serviced by different boroughs. The COMMUNITY DISTRICT codes associated with these areas are the community districts they are serviced by. Specifically, Marble Hill is legally located in Manhattan but is serviced by the Bronx and has Bronx COMMUNITY DISTRICT codes of 207 or 208. Rikers Island has a Queens COMMUNITY DISTRICT code of 401 since it is serviced by Queens even though it is legally located in the Bronx.
     
 
 ### CT2010
@@ -187,7 +182,7 @@ The zip code is obtained from the Department of City Planning- Geosupport System
     - 077-087: Staten Island Fire Company Districts - Ladder
 - **Description**: The fire company that services the tax lot. This field consists of four characters, the first of which is an alphabetic code identifying the type of Fire Company, where E stands for Engine and L stands for Ladder. The type code is followed by a one to three digit fire company number which is preceded with leading zeros if the company number is less than three digits.
 
-N\A
+
     
 
 ### PolicePrct
@@ -289,7 +284,7 @@ The general format is house number or low house number, if there is a house numb
     - DROP LOT: DOF RPAD Tax Lot Only 
     - ZR11-151: See Section 11-151 of the Zoning Resolution for special requirements for selected properties in Queens 
     - PARKUS: United States Parks - ZNA: Zoning Not Applicable
-- **Description**: The zoning district classification of the tax lot. If the tax lot is divided by a zoning boundary line, ZoneDist1 represents the primary zoning district classification occupying the greatest percentage of the tax lot's area. Properties under the jurisdiction of NYC Department of Parks and Recreation are coded PARK. Properties under the jurisdiction of NYS Office of Parks, Recreation, and Historic Preservation are coded PARKNY. DROPLOT is a designation that City Planning devised to identify tax lots that no longer exist in the DCP version of the Digital Tax Map but have not yet been removed from the Department of Fice RPAD File. RPAD retains tax lots that have been dropped, due to merger, reapportionment or conversion to condominium, until the end of the City's Fiscal Year. To avoid confusion DROP LOT was created to identify these lots.
+- **Description**: The zoning district classification of the tax lot. If the tax lot is divided by a zoning boundary line, ZoneDist1 represents the primary zoning district classification occupying the greatest percentage of the tax lot's area. Properties under the jurisdiction of NYC Department of Parks and Recreation are coded PARK. Properties under the jurisdiction of NYS Office of Parks, Recreation, and Historic Preservation are coded PARKNY. DROPLOT is a designation that City Planning devised to identify tax lots that no longer exist in the DCP version of the Digital Tax Map but have not yet been removed from the Department of Finance RPAD File. RPAD retains tax lots that have been dropped, due to merger, reapportionment or conversion to condominium, until the end of the City's Fiscal Year. To avoid confusion DROP LOT was created to identify these lots.
 
 See SplitZone to determine if the tax lot is divided.
     
@@ -778,13 +773,13 @@ It is recommended that OwnerName be referenced to verify the type of ownership, 
 - **Expected/Allowed Values**: 
 - **Description**: Total area of the tax lot, expressed in square feet rounded to the nearest
 
-Lot Area contains street beds when the tax lot contains paper streets, i.e. streets mapped but not built. If the tax lot is not an irregularly shaped lot (IrrLotCode) the Department of Fice derives the Lot Area by multiplying the Lot Frontage by the Lot Depth. If the tax lot is irregularly shaped Fice manually calculates the Lot Area from the Tax Maps. If the lot area is zero, data is not available for the tax lot
+Lot Area contains street beds when the tax lot contains paper streets, i.e. streets mapped but not built. If the tax lot is not an irregularly shaped lot (IrrLotCode) the Department of Finance derives the Lot Area by multiplying the Lot Frontage by the Lot Depth. If the tax lot is irregularly shaped Fice manually calculates the Lot Area from the Tax Maps. If the lot area is zero, data is not available for the tax lot
     
 
 ### BldgArea
 - **Longform Name** : `Building Area`
 - **DataType**: `Number`
-- **Expected/Allowed Values**: N\A
+- **Expected/Allowed Values**: 
 - **Description**: The total gross area in square feet
 
 Only one data source is used per tax lot (See FLOOR AREA, TOTAL BUILDING SOURCE CODE) except for condo measurements which come from the Condo Declaration and are net square footage not gross. If FLOOR AREA, TOTAL BUILDING SOURCE CODE field has a code of 2 or 7, the TOTAL BUILDING FLOOR AREA is based on gross building area also known as total gross square feet. The TOTAL FLOOR AREA is for all of the structures on the tax lot, including stairwells, halls, elevator shafts, attics and extensions such as attached garages. Measurements are based on exterior dimensions and does take into account setbacks. If the FLOOR AREA, TOTAL BUILDING SOURCE CODE field has a value of 5, the floor area was calculated from the DOF RPAD Master File using the building dimensions and number of stories for ONLY the largest structure on the tax lot. NOTE: This is a rough estimate of the gross building floor area and does not necessarily take into account all the criteria for calculating floor area as defined in section 12-10 of the Zoning Resolution. If a roof is used for parking/garden/playground the square footage is not included in the Floor Area.The two main things that trigger an update is the issuance of a Department of Buildings permit and a request from the owner to update the data.The sum of COMMERCIAL and RESIDENTIAL FLOOR AREA does not always equal TOTAL BUILDING FLOOR AREA.If the FLOOR AREA, TOTAL BUILDING SOURCE CODE is 2, the TOTAL BUILDING FLOOR AREA contains the Common Area for condominiums. If the FLOOR AREA, TOTAL BUILDING SOURCE CODE is 7, the TOTAL BUILDING FLOOR AREA does not include finished basement below grade. A TOTAL BUILDING FLOOR AREA of zero can mean it is either not available or not applicable. If NUMBER OF BUILDINGS is greater than zero, then a TOTAL BUILDING FLOOR AREA of zero means it is not available. If NUMBER OF BUILDINGS is zero, then a TOTAL BUILDING FLOOR AREA of zero means it is not applicable.
@@ -796,7 +791,7 @@ Only one data source is used per tax lot (See FLOOR AREA, TOTAL BUILDING SOURCE 
 - **Expected/Allowed Values**: 
 - **Description**: An estimate of the exterior dimensions of the portion of the structure(s) allocated for commercial use.
 
-Originally Square Footage came from sketches but for both New Construction and Alterations it comes from site visits. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Fice assessors.A COMMERCIAL FLOOR AREA of zero can mean it is either not available or not applicable.The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. COMMERCIAL FLOOR AREA does not contain a condominiums Common Area.
+Originally Square Footage came from sketches but for both New Construction and Alterations it comes from site visits. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Finance assessors.A COMMERCIAL FLOOR AREA of zero can mean it is either not available or not applicable.The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. COMMERCIAL FLOOR AREA does not contain a condominiums Common Area.
     
 
 ### ResArea
@@ -805,7 +800,7 @@ Originally Square Footage came from sketches but for both New Construction and A
 - **Expected/Allowed Values**: 
 - **Description**: An estimate of the exterior dimensions of the portion of the structure(s) allocated for residential use.
 
-An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Fice assessors.A RESIDENTIAL FLOOR AREA of zero can mean it is either not available or not applicable.The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. RESIDENTIAL FLOOR AREA does not contain a condominiums Common Area.
+An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Finance assessors.A RESIDENTIAL FLOOR AREA of zero can mean it is either not available or not applicable.The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. RESIDENTIAL FLOOR AREA does not contain a condominiums Common Area.
     
 
 ### OfficeArea
@@ -814,7 +809,7 @@ An update to the Floor Area is triggered by the issuance of a Department of Buil
 - **Expected/Allowed Values**: 
 - **Description**: An estimate of the exterior dimensions of the portion of the structure(s) allocated for office use.
 
-The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. An OFFICE FLOOR AREA of zero can mean it is either not available or not applicable. This information is NOT available for one, two or three family structures.An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Fice assessors.
+The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. An OFFICE FLOOR AREA of zero can mean it is either not available or not applicable. This information is NOT available for one, two or three family structures.An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Finance assessors.
     
 
 ### RetailArea
@@ -823,7 +818,7 @@ The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AR
 - **Expected/Allowed Values**: 
 - **Description**: An estimate of the exterior dimensions of the portion of the structure(s) allocated for retail use.
 
-The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. A RETAIL FLOOR AREA of zero can mean it is either not available or not applicable. This information is NOT available for one, two or three family structures. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Fice assessors.
+The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. A RETAIL FLOOR AREA of zero can mean it is either not available or not applicable. This information is NOT available for one, two or three family structures. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Finance assessors.
     
 
 ### GarageArea
@@ -832,7 +827,7 @@ The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AR
 - **Expected/Allowed Values**: 
 - **Description**: An estimate of the exterior dimensions of the portion of the structure(s) allocated for garage use.
 
-The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. A GARAGE FLOOR AREA of zero can mean it is either not available or not applicable. This information is NOT available for one, two or three family structures. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Fice assessors.
+The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. A GARAGE FLOOR AREA of zero can mean it is either not available or not applicable. This information is NOT available for one, two or three family structures. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Finance assessors.
     
 
 ### StrgArea
@@ -841,7 +836,7 @@ The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AR
 - **Expected/Allowed Values**: 
 - **Description**: An estimate of the exterior dimensions of the portion of the structure(s) allocated for storage or loft purposes.
 
-This information is NOT available for one, two or three family structures. A STORAGE FLOOR AREA of zero can mean it is either not available or not applicable. The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Fice assessors.
+This information is NOT available for one, two or three family structures. A STORAGE FLOOR AREA of zero can mean it is either not available or not applicable. The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Finance assessors.
     
 
 ### FactryArea
@@ -850,7 +845,7 @@ This information is NOT available for one, two or three family structures. A STO
 - **Expected/Allowed Values**: 
 - **Description**: An estimate of the exterior dimensions of the portion of the structure(s) allocated for factory, warehouse or loft use.
 
-This information is NOT available for one, two or three family structures. A FACTORY FLOOR AREA of zero can mean it is either not available or not applicable. The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Fice assessors.
+This information is NOT available for one, two or three family structures. A FACTORY FLOOR AREA of zero can mean it is either not available or not applicable. The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Finance assessors.
     
 
 ### OtherArea
@@ -859,13 +854,13 @@ This information is NOT available for one, two or three family structures. A FAC
 - **Expected/Allowed Values**: 
 - **Description**: An estimate of the exterior dimensions of the portion of the structure(s) allocated for other than Residential, Office, Retail, Garage, Storage, Loft or Factory use.
 
-The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. An OTHER FLOOR AREA of zero can mean it is either not available or not applicable. This information is NOT available for one, two or three family structures. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Fice assessors.
+The sum of the various FLOOR AREAs does not always equal TOTAL BUILDING FLOOR AREA. An OTHER FLOOR AREA of zero can mean it is either not available or not applicable. This information is NOT available for one, two or three family structures. An update to the Floor Area is triggered by the issuance of a Department of Buildings Permit, feedback from the public and scheduled visits by the Department of Finance assessors.
     
 
 ### AreaSource
 - **Longform Name** : `Area Source`
 - **DataType**: `Plain Text`
-- **Expected/Allowed Values**: 0: Not Available - 2: Department of Fice's RPAD File - 3: One or more Building Dimensions are non-numeric. Total Building Floor Area is 0. - 4: Building Class is 'V' and Number of Buildings is 0. Total Building Floor Area is 0. - 5: Total Building Floor Area is calculated from RPAD Building Dimensions and Number of Stories for largest building only. - 6: Unknown - 7: Department of Fice's Mass Appraisal System - 9: User
+- **Expected/Allowed Values**: 0: Not Available - 2: Department of Finance's RPAD File - 3: One or more Building Dimensions are non-numeric. Total Building Floor Area is 0. - 4: Building Class is 'V' and Number of Buildings is 0. Total Building Floor Area is 0. - 5: Total Building Floor Area is calculated from RPAD Building Dimensions and Number of Stories for largest building only. - 6: Unknown - 7: Department of Finance's Mass Appraisal System - 9: User
 - **Description**: A code indicating the source file that was used to determine the tax lot's total building floor area.
 
 
@@ -976,7 +971,7 @@ The count of non-residential units is sometimes not available if the building co
 - **Expected/Allowed Values**: 0: Mixed or Unknown - 1: Block Assemblage - A tax lot which encompasses an entire block. - 2: Waterfront - A tax lot bordering on a body of water. Waterfront lots may contain a small amount of submerged land. - 3: Corner - A tax lot bordering on two intersecting streets - 4: Through - A tax lot which connects two streets and fronts on both streets. A lot with two frontages is not necessarily a through lot. For example, an L-shaped lot with two frontages would be coded as an Inside Lot (5). - 5: Inside - A tax lot which is not an assemblage, waterfront, corner, through, interior, island, alley or submerged lot. - 6: Interior Lot - A tax lot that has no street frontage - 7: Island Lot - A tax lot that is entirely surrounded by water. - 8: Alley Lot - A tax lot that is too narrow to accommodate a building. The lot is usually 12 feet or less in width. - 9: Submerged Land Lot - A tax lot that is totally or almost completely submerged.
 - **Description**: A code indicating the location of the tax lot to another tax lot and/or the water.
 
-N\A
+
     
 
 ### BsmtCode
@@ -1000,7 +995,7 @@ All basements in brownstones, high ranches, split-levels and attached row houses
 - **Expected/Allowed Values**: 
 - **Description**: The final tentative assessed land value for Fiscal Year 2019
 
-The Department of Fice calculates the assessed value by multiplying the tax lot's estimated full market land value, determined as if vacant and unimproved, by a uniform percentage for the property's tax class.
+The Department of Finance calculates the assessed value by multiplying the tax lot's estimated full market land value, determined as if vacant and unimproved, by a uniform percentage for the property's tax class.
     
 
 ### AssessTot
@@ -1009,7 +1004,7 @@ The Department of Fice calculates the assessed value by multiplying the tax lot'
 - **Expected/Allowed Values**: 
 - **Description**: The final tentative assessed total value for Fiscal Year 2019
 
-The Department of Fice calculates the assessed value by multiplying the tax lot estimated full market value by a uniform percentage for the propertys tax class.Property value is assessed as of January 5th. If a site is not completed by April 14th the assessed building value is 0 and the Building Class reverts to Vacant.
+The Department of Finance calculates the assessed value by multiplying the tax lot estimated full market value by a uniform percentage for the propertys tax class.Property value is assessed as of January 5th. If a site is not completed by April 14th the assessed building value is 0 and the Building Class reverts to Vacant.
     
 
 ### ExemptLand
@@ -1045,7 +1040,7 @@ The Department of Fice calculates the assessed value by multiplying the tax lot 
 - **Expected/Allowed Values**: 
 - **Description**:  The year of the most recent alteration.
 
-If the alteration spanned more than one year, YearAlter1 is the year the alteration began, otherwise it is the year the alteration was completed. The date can either be the actual date or an estimate. Year Altered comes from Department of Buildings Permits. The Department of Fice defines modifications to the structure that, according to the assesor, changes the value of the real property.
+If the alteration spanned more than one year, YearAlter1 is the year the alteration began, otherwise it is the year the alteration was completed. The date can either be the actual date or an estimate. Year Altered comes from Department of Buildings Permits. The Department of Finance defines modifications to the structure that, according to the assesor, changes the value of the real property.
     
 
 ### YearAlter2
@@ -1054,7 +1049,7 @@ If the alteration spanned more than one year, YearAlter1 is the year the alterat
 - **Expected/Allowed Values**: 
 - **Description**: The year of the second most recent alteration.
 
-If the alteration spanned more than one year, YearAlter2 is the year the alteration began, otherwise it is the year the alteration was completed. The date can either be the actual date or an estimate. Year Altered comes from Department of Buildings Permits. The Department of Fice defines modifications to the structure that, according to the assesor, changes the value of the real property.
+If the alteration spanned more than one year, YearAlter2 is the year the alteration began, otherwise it is the year the alteration was completed. The date can either be the actual date or an estimate. Year Altered comes from Department of Buildings Permits. The Department of Finance defines modifications to the structure that, according to the assesor, changes the value of the real property.
     
 
 ### HistDist
@@ -1081,7 +1076,7 @@ If the alteration spanned more than one year, YearAlter2 is the year the alterat
 - **Expected/Allowed Values**: 
 - **Description**: The Built Floor Area Ratio (FAR) is the total building floor area divided by the area of the tax lot.
 
-This is an estimate by City Planning based on rough building area and lot area measurements provided by the Department Of Fice. FAR is calculated using the TOTAL BUILDING FLOOR AREA and the LOT AREA. The TOTAL BUILDING FLOOR AREA is either based on gross building area also known as total gross square feet for all of the structures on the tax lot, including basements, attics and extensions such as attached garages, detached garages, pool houses and greenhouse OR the floor area was calculated from the DOF RPAD Master File using the building dimensions and number of stories for ONLY the largest structure on the tax lot depending on the source available. The LotArea contains street beds when the lot contains paper streets, i.e., streets mapped but not built.
+This is an estimate by City Planning based on rough building area and lot area measurements provided by the Department of Finance. FAR is calculated using the TOTAL BUILDING FLOOR AREA and the LOT AREA. The TOTAL BUILDING FLOOR AREA is either based on gross building area also known as total gross square feet for all of the structures on the tax lot, including basements, attics and extensions such as attached garages, detached garages, pool houses and greenhouse OR the floor area was calculated from the DOF RPAD Master File using the building dimensions and number of stories for ONLY the largest structure on the tax lot depending on the source available. The LotArea contains street beds when the lot contains paper streets, i.e., streets mapped but not built.
     
 
 ### ResidFAR
@@ -1201,7 +1196,7 @@ The Y coordinate of the XY coordinate pair which depicts the approximate locatio
 - **Longform Name** : `Tax Map #`
 - **DataType**: `Plain Text`
 - **Expected/Allowed Values**: 
-- **Description**: The Department of Fice paper tax map Volume Number associated with the tax block and lot. Tax map number format is Borough Code / Volume Number / Page Number. The Department of Fice no longer updates their paper tax maps.
+- **Description**: The Department of Finance paper tax map Volume Number associated with the tax block and lot. Tax map number format is Borough Code / Volume Number / Page Number. The Department of Finance no longer updates their paper tax maps.
 
 
     
@@ -1265,3 +1260,11 @@ The tax lot will not appear in the MapPLUTO geodatabase if the lot is found only
 - **DataType**: `Plain Text`
 - **Expected/Allowed Values**: 
 - **Description**: The Version Number related to the release of PLUTO.
+
+!> PLUTO is being provided by the Department of City Planning (DCP) on DCP’s website for
+informational purposes only. DCP does not warranty the completeness, accuracy,
+content, or fitness for any particular purpose or use of PLUTO, nor are any such
+warranties to be implied or inferred with respect to PLUTO as furnished on the website.
+DCP and the City are not liable for any deficiencies in the completeness, accuracy,
+content, or fitness for any particular purpose or use of PLUTO, or applications utilizing
+PLUTO, provided by any third party.
