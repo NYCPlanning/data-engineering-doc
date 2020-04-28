@@ -2,11 +2,11 @@
 
 The goal of the developments database is to provide a detailed view of both residential and non-residential development that has occured since the 2010 census. The core of the developments data base is a compilation of NYC DOB job and permit information. This data captures changes in units resulting from new buildings, major alterations, and demolitions. Rough timelines of development are captured in the [DOB job status dates](https://www1.nyc.gov/assets/buildings/pdf/bisjobstatus.pdf). To more reliably capture development completion, the database also includes dates associated with certificates of occupancy. Where possible, the database also tracks Housing New York affordable units created as part of each development. 
 
-We provide context for each development record by geocoding, then merging the data with various political, geographic, and administrative boundaries. Lot-level zoning and land-use information comes from [PLUTO](/_content/pluto).
+We provide context for each development record by geocoding, then merging the data with various political, geographic, and administrative boundaries. Lot-level zoning and land-use information comes from [PLUTO](/products/pluto).
 
 ## Source data
 
-The majority of the data contained in the developments database comes from NYC DOB. These include permit issuance data, job application records, and new certificates of occupancy. Housing New York affordable housing unit information comes from HPD. Administrative and geographic boundary information primarily comes from DCP. Other contextual data comes from [PLUTO](/_content/pluto)
+The majority of the data contained in the developments database comes from NYC DOB. These include permit issuance data, job application records, and new certificates of occupancy. Housing New York affordable housing unit information comes from HPD. Administrative and geographic boundary information primarily comes from DCP. Other contextual data comes from [PLUTO](/products/pluto)
 
 ## Data dictionary
 
@@ -344,25 +344,25 @@ The City Planning Commission designates special zoning districts to achieve spec
 
 ### PLUTO fields
 
-The developments database also contains several fields from [PLUTO](/_content/pluto). These include:
-+ [`pluto_unitres`: Units Residential](/_content/pluto?id=unitsres)
-+ [`pluto_bldgsf`: Building Area](/_content/pluto?id=bldgarea)
-+ [`pluto_comsf`: Commercial Area](/_content/pluto?id=comarea)
-+ [`pluto_offcsf`: Office Area](/_content/pluto?id=officearea)
-+ [`pluto_retlsf`: Retail Area](/_content/pluto?id=retainarea)
-+ [`pluto_ressf`: Residential Area](/_content/pluto?id=resarea)
-+ [`pluto_yrbuilt`: Year Built](/_content/pluto?id=yearbuilt)
-+ [`pluto_yralt1`: Most Recent Alteraton Year](/_content/pluto?id=yearalter1)
-+ [`pluto_yralt2`: Second Most Recent Alteration Year](/_content/pluto?id=yearalter2)
-+ [`pluto_bldgcls`: Building Class](/_content/pluto?id=bldgclass)
-+ [`pluto_landuse`: Land Use](/_content/pluto?id=landuse)
-+ [`pluto_owner`: Owner Name](/_content/pluto?id=ownername)
-+ [`pluto_owntype`: Ownership Type](/_content/pluto?id=ownertype)
-+ [`pluto_condo`: Condominium Number](/_content/pluto?id=bldgclass)
-+ [`pluto_bldgs`: Number of Buildings](/_content/pluto?id=numbldgs)
-+ [`pluto_floors`: Number of Floors](/_content/pluto?id=numfloors)
-+ [`pluto_firm07`: FIRM07_FLA](/_content/pluto?id=firm07_fla)
-+ [`pluto_pfirm15`: PFIRM15_FL](/_content/pluto?id=pfirm15_fl)
-+ [`pluto_version`: Version](/_content/pluto?id=version)
+The developments database also contains several fields from [PLUTO](/products/pluto). These include:
++ [`pluto_unitres`: Units Residential](/products/pluto?id=unitsres)
++ [`pluto_bldgsf`: Building Area](/products/pluto?id=bldgarea)
++ [`pluto_comsf`: Commercial Area](/products/pluto?id=comarea)
++ [`pluto_offcsf`: Office Area](/products/pluto?id=officearea)
++ [`pluto_retlsf`: Retail Area](/products/pluto?id=retainarea)
++ [`pluto_ressf`: Residential Area](/products/pluto?id=resarea)
++ [`pluto_yrbuilt`: Year Built](/products/pluto?id=yearbuilt)
++ [`pluto_yralt1`: Most Recent Alteraton Year](/products/pluto?id=yearalter1)
++ [`pluto_yralt2`: Second Most Recent Alteration Year](/products/pluto?id=yearalter2)
++ [`pluto_bldgcls`: Building Class](/products/pluto?id=bldgclass)
++ [`pluto_landuse`: Land Use](/products/pluto?id=landuse)
++ [`pluto_owner`: Owner Name](/products/pluto?id=ownername)
++ [`pluto_owntype`: Ownership Type](/products/pluto?id=ownertype)
++ [`pluto_condo`: Condominium Number](/products/pluto?id=bldgclass)
++ [`pluto_bldgs`: Number of Buildings](/products/pluto?id=numbldgs)
++ [`pluto_floors`: Number of Floors](/products/pluto?id=numfloors)
++ [`pluto_firm07`: FIRM07_FLA](/products/pluto?id=firm07_fla)
++ [`pluto_pfirm15`: PFIRM15_FL](/products/pluto?id=pfirm15_fl)
++ [`pluto_version`: Version](/products/pluto?id=version)
 
 For more thorough descriptions of each field, see the PLUTO documentation.

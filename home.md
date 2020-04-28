@@ -30,4 +30,4 @@ As data engineers we develop data products. We’re responsible for creating new
 </table>
 
 ## Read more {docsify-ignore}
-[blogs](_assets/blogs.html ':include :type=iframe width=100% height=850px')
+[blogs](assets/blogs.html ':include :type=iframe width=100% height=850px')
