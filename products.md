@@ -74,7 +74,7 @@ Products Overview
                 stability: stable,
                 geometry: 'polygon',
                 repo: 'https://github.com/NYCPlanning/db-pluto',
-                link: 'products/pluto'
+                link: 'content/pluto'
             },
             {
                 name: 'COLP',
@@ -84,7 +84,7 @@ Products Overview
                 stability: developing,
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-colp',
-                link: 'products/colp'
+                link: 'content/colp'
             },
             {
                 name: 'Facilities Database',
@@ -94,7 +94,7 @@ Products Overview
                 stability: enhancing,
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-facilities',
-                link: 'products/facilities'
+                link: 'content/facilities'
             },
             {
                 name: 'Developments Database',
@@ -104,7 +104,7 @@ Products Overview
                 stability: enhancing,
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-developments',
-                link: 'products/developments'
+                link: 'content/developments'
             },
             {
                 name: 'Zoning Tax Lot Database',
@@ -114,7 +114,7 @@ Products Overview
                 stability: stable,
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-zoningtaxlots',
-                link: 'products/facilities'
+                link: 'content/facilities'
             },
             {
                 name: 'Community Board Budget Requests',
@@ -126,7 +126,7 @@ Products Overview
                 stability: stable,
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-cbbt',
-                link: 'products/cbbr'
+                link: 'content/cbbr'
             },
             {
                 name: 'Population Fact Finder',
@@ -136,7 +136,7 @@ Products Overview
                 stability: stable,
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-acs',
-                link: 'products/acs'
+                link: 'content/acs'
             },
             {
                 name: 'Geographic Research Quality Checks',
@@ -146,7 +146,7 @@ Products Overview
                 stability: developing,
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-gru-qaqc',
-                link: 'products/gru-qaqc'
+                link: 'content/gru-qaqc'
             }
         ]}
     })
