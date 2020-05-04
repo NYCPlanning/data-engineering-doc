@@ -10,4 +10,5 @@
     - [🌆 Zoning Tax Lots DB](products/ztl.md)
     - [💵 Capital Projects DB](products/cpdb.md)
 
+- [Disclaimer](disclaimer.md)
 - [Contacts](contacts.md)
