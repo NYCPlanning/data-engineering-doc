@@ -1,4 +1,6 @@
-# Disclaimer
+<h1 style="font-size:3rem; margin:0 0 2rem 0; font-weight:900; color:#212326;">
+⚠️ Disclaimer
+</h1>
 
 ## General Constraints Use Limitations {docsify-ignore}
 All data products mentioned on this website are being provided by the Department of City Planning (DCP) on the GitHub website for informational purposes only. DCP does not warrant the completeness, accuracy, content, or fitness for any particular purpose or use of the dataset, nor are any such warranties to be implied or inferred with respect to the dataset as furnished on the website
