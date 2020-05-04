@@ -272,8 +272,6 @@ The tables that compose CPDB are all related by the **FMS ID**.
 ### geom
 - **Longform Name**: `Geometry`
 - **Description**: Spatial data information.
-## Limitation and Disclaimers
-
 
 ## Data Dictionary -- Project Combined
 
