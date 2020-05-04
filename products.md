@@ -55,6 +55,7 @@ Products Overview
 <script>
     var edm = {name:'DCP EDM', color:'#0366d6'}
     var hed = {name:'DCP HED', color:'#ff006a'}
+    var cp = {name:'DCP CP', color:'#170cf0'}
     var dcas = {name:'DCAS', color:'#c300ff'}
     var pop = {name:'DCP Population', color:'#4a8207'}
     var plancoord = {name:'DCP Planning Coordination', color:'#ed6802'}
@@ -89,7 +90,7 @@ Products Overview
             {
                 name: 'Facilities Database',
                 description: 'Location and characteristics and categorization of more than 35,000 public facilities in NYC. This data is a standardized aggregation of other public datasets.',
-                businessowner: [edm],
+                businessowner: [edm, cp],
                 productcycle: 'Quarterly',
                 stability: enhancing,
                 geometry: 'point',
@@ -99,7 +100,7 @@ Products Overview
             {
                 name: 'Developments Database',
                 description: 'Contains information about new building, demolitions, and alterations of buildings occuring since the 2010 Census. The purpose of this dataset is to capture development and residential growth over time. The primary input for this dataset is DOB jobs and occupancy data.',
-                businessowner: [edm, hed],
+                businessowner: [edm, hed, cp],
                 productcycle: 'Bianually',
                 stability: enhancing,
                 geometry: 'point',
@@ -108,13 +109,23 @@ Products Overview
             },
             {
                 name: 'Zoning Tax Lot Database',
-                description: 'The Database includes the zoning designations and zoning map associated with a specific tax block and lot.',
+                description: 'The database includes the zoning designations and zoning map associated with a specific tax block and lot.',
                 businessowner: [edm],
                 productcycle: 'Monthly',
                 stability: stable,
                 geometry: 'point',
                 repo: 'https://github.com/NYCPlanning/db-zoningtaxlots',
-                link: '#/products/facilities'
+                link: '#/products/ztl'
+            },
+            {
+                name: 'Capital Projects Database',
+                description: 'The database captures key data points on potential, planned, and ongoing capital projects sponsored or managed by a capital agency in and around NYC',
+                businessowner: [edm, cp],
+                productcycle: 'Monthly',
+                stability: stable,
+                geometry: 'point',
+                repo: 'https://github.com/NYCPlanning/db-cpdb',
+                link: '#/products/cpdb'
             },
             {
                 name: 'Community Board Budget Requests',

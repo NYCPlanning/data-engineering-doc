@@ -8,5 +8,6 @@
     - [🏭 Facilities DB](products/facilities.md)
     - [🏗️ Developments DB](products/developments.md)
     - [🌆 Zoning Tax Lots DB](products/ztl.md)
+    - [💵 Capital Projects DB](products/cpdb.md)
 
 - [Contacts](contacts.md)
