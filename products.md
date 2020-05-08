@@ -54,10 +54,13 @@ Products Overview
 
 <script>
     var edm = {name:'DCP EDM', color:'#0366d6'}
+    var labs = {name:'DCP Planning Labs', color:'#fc7b03'}
+    var eard = {name:'DCP EARD', color:'#6b3787'}
     var hed = {name:'DCP HED', color:'#ff006a'}
     var cp = {name:'DCP CP', color:'#170cf0'}
     var dcas = {name:'DCAS', color:'#c300ff'}
     var pop = {name:'DCP Population', color:'#4a8207'}
+    var omb = {name:'OMB', color:'#169470'}
     var plancoord = {name:'DCP Planning Coordination', color:'#ed6802'}
     var stable = {name:'stable', color:'#00ae00'}
     var developing = {name:'in development', color:'#d73a49'}
@@ -118,6 +121,36 @@ Products Overview
                 link: '#/products/ztl'
             },
             {
+                name: 'CEQR App Data',
+                description: 'A Portfolio of Data Packages Developed for the CEQR APP, supported analyses including: the schools analysis air quality analysis and traffic analysis',
+                businessowner: [edm, labs, eard],
+                productcycle: 'NA',
+                stability: developing,
+                geometry: 'NA',
+                repo: 'https://github.com/NYCPlanning/ceqr-app-data',
+                link: 'https://ceqr-app-data.netlify.app/#/'
+            },
+            {
+                name: 'Population Fact Finder',
+                description: 'Population FactFinder allows you to easily define study areas within New York City and examine detailed population profiles showing critical demographic, social, economic, and housing statistics, and how these statistics have changed over time.',
+                businessowner: [edm, pop],
+                productcycle: 'Yearly',
+                stability: stable,
+                geometry: 'point',
+                repo: 'https://github.com/NYCPlanning/db-acs',
+                link: '#/products/acs'
+            },
+            {
+                name: 'Known Projects Database',
+                description: 'A compilation of prospective residential development projects from various sources, with rough projections of new unit counts',
+                businessowner: [edm, cp, hed],
+                productcycle: 'Yearly',
+                stability: developing,
+                geometry: 'NA',
+                repo: 'https://github.com/NYCPlanning/db-knownprojects',
+                link: 'https://github.com/NYCPlanning/db-knownprojects/wiki'
+            },
+            {
                 name: 'Capital Projects Database',
                 description: 'The database captures key data points on potential, planned, and ongoing capital projects sponsored or managed by a capital agency in and around NYC',
                 businessowner: [edm, cp],
@@ -136,18 +169,18 @@ Products Overview
                 productcycle: 'Bianually',
                 stability: stable,
                 geometry: 'point',
-                repo: 'https://github.com/NYCPlanning/db-cbbt',
+                repo: 'https://github.com/NYCPlanning/db-cbbr',
                 link: '#/products/cbbr'
             },
             {
-                name: 'Population Fact Finder',
-                description: 'Population FactFinder allows you to easily define study areas within New York City and examine detailed population profiles showing critical demographic, social, economic, and housing statistics, and how these statistics have changed over time.',
-                businessowner: [edm, pop],
+                name: 'Community Development Block Grants',
+                description: 'CDBG',
+                businessowner: [edm, omb],
                 productcycle: 'Yearly',
                 stability: stable,
                 geometry: 'point',
-                repo: 'https://github.com/NYCPlanning/db-acs',
-                link: '#/products/acs'
+                repo: 'https://github.com/NYCPlanning/db-cdbg',
+                link: '#/products/cdbg'
             },
             {
                 name: 'Geographic Research Quality Checks',
