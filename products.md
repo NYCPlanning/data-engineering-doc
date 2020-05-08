@@ -2,7 +2,7 @@
 Products Overview
 </h1>
 <div id="data-products" class="card-deck">
-    <div v-for="product in products" 
+    <div v-for="product in products"
         :key="product.name"
         class="card mb-3" style="min-width: 16rem;">
         <div class="card-header">
@@ -19,8 +19,8 @@ Products Overview
             <div>
                 <div>
                     <p class='product-labelname'>Status:</p>
-                    <span 
-                        v-bind:style="{background: product.stability.color}" 
+                    <span
+                        v-bind:style="{background: product.stability.color}"
                         class="label"
                     >
                         {{ product.stability.name }}

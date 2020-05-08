@@ -3,12 +3,15 @@
 </span>
 
 ## About us {docsify-ignore}
+
 Data Engineering is a team of technologists within the NYC Department of City Planning’s Enterprise Data Management (EDM) group. We are passionate about data, and everything associated with it, from how it’s created and documented to how it’s shared and used. We believe that data are foundational and we’re excited to bring data to the forefront at NYC Planning.
 
 ## Our mission {docsify-ignore}
+
 As data engineers we develop data products. We’re responsible for creating new databases and modernizing the creation of existing datasets, such as NYC’s definitive tax lot dataset (aka PLUTO), for NYC Planning. The data we produce are used by planners and civic technologists alike in analyses, which help inform decisions that ultimately shape NYC. Our data products also power downstream applications, such as NYC’s Zoning and Land Use Map, used by planners, policy makers, and the public. Therefore, it’s imperative that we publish data and supporting documentation of the highest quality.
 
 ## Our team {docsify-ignore}
+
 <table>
   <tr>
     <td align="center">
@@ -30,4 +33,5 @@ As data engineers we develop data products. We’re responsible for creating new
 </table>
 
 ## Read more {docsify-ignore}
+
 [blogs](assets/blogs.html ':include :type=iframe width=100% height=850px')
